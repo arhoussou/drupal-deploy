@@ -818,7 +818,7 @@ tools. -->
       <param value="${phing.file}"/>
     </php>
 
-    <property name="project.basedir" value="../" />
+    <property name="project.basedir" value="" />
 
     <!-- Use condition instead of unless property as we cannot unset properties in Phing -->
     <if>
