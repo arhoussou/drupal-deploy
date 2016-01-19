@@ -889,7 +889,7 @@ called from `init` target. -->
       </then>
       <else>
         <property name="project.drupal.dir"
-                value="${project.basedir}" />
+                value="" />
       </else>
     </if>
 
