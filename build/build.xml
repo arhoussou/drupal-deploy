@@ -884,11 +884,11 @@ called from `init` target. -->
       <isset property="drupal.make.dir"/>
       <then>
         <property name="project.drupal.dir"
-                value="../${drupal.make.dir}" />
+                value="${drupal.make.dir}" />
       </then>
       <else>
         <property name="project.drupal.dir"
-                value="../" />
+                value="" />
       </else>
     </if>
 
