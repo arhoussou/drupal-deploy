@@ -839,8 +839,7 @@ root directory. -->
                project root directory -->
           <available file="${project.basedir}/../build.properties"/>
           <then>
-            <resolvepath propertyName="project.basedir"
-                         file="${project.basedir}/../"/>
+           
           </then>
         </if>
 
