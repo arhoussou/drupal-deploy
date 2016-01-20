@@ -2,6 +2,7 @@
 core = 7.x
 
 api = 2
+defaults[projects][subdir] = contrib
 projects[drupal][version] = "7.41"
 
 ; Modules
@@ -120,6 +121,7 @@ projects[token][version] = "1.6"
 projects[views][version] = "3.13"
 
 projects[webform][version] = "3.24"
+projects[webform][subdir] = custom
 
 projects[webform_classes][version] = "2.23"
 
