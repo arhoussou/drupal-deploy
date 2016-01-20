@@ -819,7 +819,7 @@ tools. -->
     </php>
 
     <property name="project.basedir" value="" />
-
+	<echo> base dir : ${project.basedir}</echo>
     <!-- Use condition instead of unless property as we cannot unset properties in Phing -->
     <if>
       <or>
@@ -885,17 +885,24 @@ called from `init` target. -->
       <then>
         <property name="project.drupal.dir"
                 value="${drupal.make.dir}" />
+                <echo> project.drupal.dir : ${project.drupal.dir}</echo>
       </then>
       <else>
         <property name="project.drupal.dir"
                 value="" />
+                 <echo> project.drupal.dir 2 : ${project.drupal.dir}</echo>
+  
       </else>
     </if>
 
     <property name="project.sitesdir"
               value="${project.drupal.dir}/${project.code.dir}" />
+       <echo> project.sitesdir: ${project.sitesdir}</echo>
+  
     <property name="project.builddir"
               value="${project.basedir}/build" />
+     <echo> project.builddir: ${project.builddir}</echo>
+  
     <property name="project.toolsdir"
               value="${project.builddir}/tools" />
     <property name="project.coveragedir"
