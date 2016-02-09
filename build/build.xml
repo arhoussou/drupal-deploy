@@ -144,7 +144,7 @@ complies with coding standards. -->
     <phingcall target="coder-review-d${drupal.version}">
       <!-- Run the target as if it was executed from the Drupal root
            directory. -->
-      <property name="project.basedir" value="${project.drupal.dir}"/>
+      <property name="project.basedir" value="build/${project.drupal.dir}"/>
       <!-- We already have a clean environment so avoid further cleaning. -->
       <property name="project.cleaned" value="1"/>
       <!-- Make will run again as a part of the `init` target. We already have
